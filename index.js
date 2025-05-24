@@ -40,7 +40,7 @@ async function fetchData() {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
         const data = await response.json();
 
-        console.log("Successful fetch request");
+        console.log("Successful fetch request", data);
 
         displayPosts(data);
     } catch (error) {
